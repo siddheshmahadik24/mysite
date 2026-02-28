@@ -36,14 +36,14 @@ export default function Hero() {
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.7 }}
-            className="text-5xl md:text-6xl font-bold text-white leading-tight whitespace-nowrap"
+            className="text-5xl md:text-6xl font-bold text-white leading-tight"
             style={{ fontFamily: "var(--font-display)" }}
           >
             Hi, I am Siddhesh Mahadik
           </motion.h1>
 
           {/* Photos */}
-          <div className="grid grid-cols-3 gap-4">
+          <div className="grid grid-cols-1 sm:grid-cols-3 gap-4">
             {photos.map((photo, i) => (
               <motion.div
                 key={photo.caption}
