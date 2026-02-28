@@ -1,0 +1,15 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(npm create:*)",
+      "Bash(cp:*)",
+      "Bash(npm install:*)",
+      "Bash(npm run:*)",
+      "Bash(npx kill-port:*)",
+      "Bash(powershell:*)",
+      "Bash(node:*)",
+      "Bash(ffmpeg:*)",
+      "Bash(git:*)"
+    ]
+  }
+}
