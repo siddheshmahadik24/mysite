@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useEffect, useRef } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { siteContent } from "../data/content";
 
@@ -11,6 +11,17 @@ const photos = [
 export default function Hero() {
   const [lightbox, setLightbox] = useState<string | null>(null);
   const [imgLoaded, setImgLoaded] = useState(false);
+  const lightboxImgRef = useRef<HTMLImageElement>(null);
+
+  useEffect(() => {
+    if (!lightbox) return;
+    const raf = requestAnimationFrame(() => {
+      if (lightboxImgRef.current?.complete && lightboxImgRef.current?.naturalWidth > 0) {
+        setImgLoaded(true);
+      }
+    });
+    return () => cancelAnimationFrame(raf);
+  }, [lightbox]);
 
   return (
     <>
@@ -55,9 +66,9 @@ export default function Hero() {
                 <img
                   src={photo.src}
                   alt={photo.caption}
-                  className="w-full h-56 rounded-xl object-cover shadow-lg cursor-zoom-in"
+                  className="w-full h-56 rounded-xl object-cover shadow-lg cursor-pointer"
                   style={{ objectPosition: photo.position }}
-                  onDoubleClick={() => { setImgLoaded(false); setLightbox(photo.src); }}
+                  onClick={() => { setImgLoaded(false); setLightbox(photo.src); }}
                 />
                 <p className="text-white/60 text-sm font-medium text-center">{photo.caption}</p>
               </motion.div>
@@ -136,8 +147,9 @@ export default function Hero() {
               src={lightbox}
               alt="Full size"
               className="max-h-screen max-w-[90vw] object-contain rounded-lg shadow-2xl"
+              ref={lightboxImgRef}
               onLoad={() => setImgLoaded(true)}
-              onClick={(e) => e.stopPropagation()}
+              onClick={() => setLightbox(null)}
             />
           </motion.div>
         )}
