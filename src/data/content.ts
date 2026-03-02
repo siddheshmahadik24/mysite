@@ -17,7 +17,6 @@ I hold a Master’s degree in Information Systems Management from Carnegie Mello
       description:
         "A live radio streaming app — rebuilt from scratch to re-learn web development fundamentals, production deployment, and vibe-coding with Claude.",
       tags: ["Web", "Streaming", "Railway"],
-      link: "https://sidsradio-production.up.railway.app/",
       github: "https://github.com/siddheshmahadik24/radio-calico",
     },
     {
