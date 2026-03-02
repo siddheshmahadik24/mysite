@@ -31,7 +31,6 @@ export default function Projects() {
               viewport={{ once: true }}
               transition={{ duration: 0.5, delay: i * 0.1 }}
               className="bg-white border border-slate-100 rounded-2xl p-7 hover:shadow-lg hover:border-slate-200 transition-all duration-300 flex flex-col group"
-              onDoubleClick={() => project.link && window.open(project.link, "_blank", "noopener,noreferrer")}
             >
               <div className="w-10 h-10 rounded-lg bg-slate-900 flex items-center justify-center mb-5">
                 <span className="text-amber-400 font-bold text-sm">{String(i + 1).padStart(2, "0")}</span>
