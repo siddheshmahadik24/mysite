@@ -2,9 +2,13 @@
 
 Personal portfolio site built with React, TypeScript, and Vite. Live at **[www.siddhesh-mahadik.com](https://www.siddhesh-mahadik.com)**.
 
+## About
+
+A fast, animated portfolio showcasing my projects and photography. Built with a focus on performance and smooth UX — image optimisation via Sharp, fluid transitions via Framer Motion, and instant global delivery via Cloudflare CDN.
+
 ## Tech Stack
 
-- **React 18** + **TypeScript**
+- **React 19** + **TypeScript**
 - **Vite** — build tool & dev server
 - **Tailwind CSS** — styling
 - **Framer Motion** — animations & lightbox transitions
