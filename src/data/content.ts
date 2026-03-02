@@ -1,3 +1,11 @@
+type Project = {
+  title: string;
+  description: string;
+  tags: string[];
+  link?: string;
+  github?: string;
+};
+
 export const siteContent = {
   name: "Siddhesh Mahadik",
   title: "VP | Financial Services",
@@ -54,5 +62,5 @@ I hold a Master’s degree in Information Systems Management from Carnegie Mello
       tags: ["AgenticAI", "LLM", "GenAI"],
       github: "https://github.com/siddheshmahadik24/ai-agents-crash-course",
     },
-  ],
+  ] as Project[],
 };
