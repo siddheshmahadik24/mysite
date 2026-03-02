@@ -9,7 +9,13 @@
       "Bash(powershell:*)",
       "Bash(node:*)",
       "Bash(ffmpeg:*)",
-      "Bash(git:*)"
+      "Bash(git:*)",
+      "Bash(gh repo:*)",
+      "Bash(railway up:*)",
+      "Bash(railway init:*)",
+      "Bash(railway status:*)",
+      "Bash(railway domain:*)",
+      "Bash(curl:*)"
     ]
   }
 }

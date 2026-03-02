@@ -13,25 +13,47 @@ I hold a Master’s degree in Information Systems Management from Carnegie Mello
 
   projects: [
     {
-      title: "Radio Streaming",
+      title: "Radio Calico",
       description:
-        "Radio streaming project - built this to learn the re-learn basics of web development, production deployment and vibe coding with Claude",
-      tags: [""],
+        "A live radio streaming app — rebuilt from scratch to re-learn web development fundamentals, production deployment, and vibe-coding with Claude.",
+      tags: ["Web", "Streaming", "Railway"],
       link: "https://sidsradio-production.up.railway.app/",
+      github: "https://github.com/siddheshmahadik24/radio-calico",
     },
     {
-      title: "Unified LLMs",
+      title: "LLM Compare",
       description:
-        "Got tired of asking the same question to multiple LLMs - build this project to fan out my questions to multiple leading frontier models. May be blocked or access controlled to save on LLM costs ",
-      tags: ["LLM", "GenaI", "AgenticAI"],
-      link: "",
+        "Got tired of asking the same question to multiple LLMs — built this to fan out prompts to several leading frontier models simultaneously and compare responses side by side.",
+      tags: ["LLM", "GenAI", "Multi-model"],
+      github: "https://github.com/siddheshmahadik24/llmcompare",
     },
     {
-      title: "Placeholder",
+      title: "Chess MCP Server",
       description:
-        "Other Ideas coming soon....",
-      tags: ["LLM", "GenaI", "AgenticAI"],
-      link: "",
+        "An MCP (Model Context Protocol) server that exposes chess engine capabilities to AI agents — lets Claude and other models reason about board states, evaluate moves, and play chess.",
+      tags: ["MCP", "Chess", "AgenticAI"],
+      github: "https://github.com/siddheshmahadik24/chessmcpsid",
+    },
+    {
+      title: "MCP Server Example",
+      description:
+        "A minimal, annotated reference implementation of a Model Context Protocol server — a starting point for building custom tool integrations for AI agents.",
+      tags: ["MCP", "AgenticAI", "Reference"],
+      github: "https://github.com/siddheshmahadik24/mcpserverexample",
+    },
+    {
+      title: "Agentic AI — 6-Week Deep Dive",
+      description:
+        "Projects and experiments from an intensive six-week study of agentic AI systems: multi-agent orchestration, tool use, memory, and autonomous decision-making.",
+      tags: ["AgenticAI", "LLM", "GenAI"],
+      github: "https://github.com/siddheshmahadik24/agents",
+    },
+    {
+      title: "AI Agents Crash Course",
+      description:
+        "Hands-on code from a structured crash course on building AI agents — covering fundamentals of tool calling, planning loops, and agent architectures.",
+      tags: ["AgenticAI", "LLM", "GenAI"],
+      github: "https://github.com/siddheshmahadik24/ai-agents-crash-course",
     },
   ],
 };

@@ -65,6 +65,16 @@ export default function Projects() {
                   View Project →
                 </a>
               )}
+              {project.github && (
+                <a
+                  href={project.github}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-amber-500 text-sm font-medium hover:text-amber-600 transition-colors mt-1"
+                >
+                  View on GitHub →
+                </a>
+              )}
             </motion.div>
           ))}
         </div>
